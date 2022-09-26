@@ -1,0 +1,12 @@
+---
+
+- name: Install pivproxy
+  package:
+    name: "{{ pivproxy_packages }}"
+    state: present
+
+- name: Enable service
+  service:
+    name: "{{ pivproxy_service }}"
+    state: started
+    enabled: yes
