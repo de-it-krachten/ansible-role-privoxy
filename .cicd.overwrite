@@ -1,0 +1,12 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-pivproxy
+  role_short: pivproxy
+  role_description: |
+    Manage pivproxy 
+
+molecule:
+  requirements:
+    roles_extra: []
