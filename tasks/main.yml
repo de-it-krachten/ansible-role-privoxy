@@ -14,7 +14,7 @@
 - name: Configure privoxy
   replace:
     path: /etc/privoxy/config
-    regexp: "^(#)*{{ item.key }}(\s*).*"
+    regexp: "^(#)*{{ item.key }}(\\s*).*"
     replace: "{{ item.key }} {{ item.value }}"
   loop: "{{ privoxy_settings | dict2items }}"
 
