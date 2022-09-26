@@ -1,7 +1,7 @@
 ---
 
 # List of packages
-pivproxy_packages:
+privoxy_packages:
   - privoxy
 
 # Privoxy service name
