@@ -7,8 +7,11 @@ privoxy_packages:
 # Privoxy service name
 privoxy_service: privoxy
 
+# privoxy ip
+privoxy_ip: "127.0.0.1"
+
 # privoxy port
 privoxy_port: 8118
 
 privoxy_settings:
-  "listen-address": "0.0.0.0:{{ privoxy_port }}"
+  "listen-address": "{{ privoxy_ip }}:{{ privoxy_port }}"
