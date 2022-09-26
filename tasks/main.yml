@@ -12,11 +12,11 @@
     enabled: yes
 
 - name: Configure privoxy
-  replace:
+  template:
+    src: templates/config.j2
     path: /etc/privoxy/config
-    regexp: "^(#)*{{ item.key }}(\\s*).*"
-    replace: "{{ item.key }} {{ item.value }}"
-  loop: "{{ privoxy_settings | dict2items }}"
+    mode: "0644"
+  notify: Restart privoxy service
 
 - name: Open firewall port
   include_role:
@@ -24,4 +24,4 @@
   vars:
     firewall_ports:
       - port: "{{ privoxy_port }}"
-        proto: 'tcp' 
+        proto: "tcp"

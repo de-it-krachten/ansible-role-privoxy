@@ -1,0 +1,6 @@
+---
+
+- name: Restart privoxy service
+  service:
+    name: "{{ privoxy_service }}"
+    state: restarted
