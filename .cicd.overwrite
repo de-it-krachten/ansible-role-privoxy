@@ -2,10 +2,10 @@
 
 # Generic
 generic:
-  role: ansible-role-pivproxy
-  role_short: pivproxy
+  role: ansible-role-privoxy
+  role_short: privoxy
   role_description: |
-    Manage pivproxy 
+    Manage privoxy 
 
 molecule:
   requirements:

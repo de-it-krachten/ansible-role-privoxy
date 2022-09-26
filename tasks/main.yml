@@ -1,6 +1,6 @@
 ---
 
-- name: Install pivproxy
+- name: Install privoxy
   package:
     name: "{{ privoxy_packages }}"
     state: present

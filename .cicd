@@ -2,8 +2,8 @@
 
 # Generic
 generic:
-  role: ansible-role-pivproxy
-  role_short: pivproxy
+  role: ansible-role-privoxy
+  role_short: privoxy
   role_description: |
     <put description in .cicd.overwrite>
 
@@ -283,9 +283,9 @@ platforms_overwrite: {}
 
 # Ansible galaxy
 galaxy:
-  role_name: pivproxy
+  role_name: privoxy
   namespace: de_it_krachten
-  description: pivproxy
+  description: privoxy
   author: Mark van Huijstee
   company: De IT Krachten BV
   license: MIT
@@ -316,7 +316,7 @@ github:
   fail_fast: false
   parallel: true
   owner: de-it-krachten
-  repo: ansible-role-pivproxy
+  repo: ansible-role-privoxy
   lint_matrix:
     - name: ansible4
       ansible: ">4,<5"

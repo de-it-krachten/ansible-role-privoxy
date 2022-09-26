@@ -8,7 +8,7 @@ privoxy_packages:
 privoxy_service: privoxy
 
 # privoxy ip
-privoxy_ip: "127.0.0.1"
+privoxy_ip: "{{ ansible_default_ipv4.address }}"
 
 # privoxy port
 privoxy_port: 8118

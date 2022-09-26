@@ -4,6 +4,6 @@
   hosts: all
   become: "{{ molecule['converge']['become'] | default('yes') }}"
   tasks:
-    - name: Include role 'ansible-role-pivproxy'
+    - name: Include role 'ansible-role-privoxy'
       include_role:
-        name: ansible-role-pivproxy
+        name: ansible-role-privoxy
