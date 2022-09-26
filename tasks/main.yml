@@ -14,7 +14,7 @@
 - name: Configure privoxy
   template:
     src: templates/config.j2
-    path: /etc/privoxy/config
+    dest: /etc/privoxy/config
     mode: "0644"
   notify: Restart privoxy service
 
