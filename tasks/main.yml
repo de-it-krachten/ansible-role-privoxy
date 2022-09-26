@@ -11,6 +11,13 @@
     state: started
     enabled: yes
 
+- name: Configure privoxy
+  replace:
+    path: /etc/privoxy/config
+    regexp: "^(#)*{{ item.key }}(\s*).*"
+    replace: "{{ item.key }} {{ item.value }}"
+  loop: "{{ privoxy_settings | dict2items }}"
+
 - name: Open firewall port
   include_role:
     name: firewall

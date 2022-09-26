@@ -9,3 +9,6 @@ privoxy_service: privoxy
 
 # privoxy port
 privoxy_port: 8118
+
+privoxy_settings:
+  "listen-address": "0.0.0.0:{{ privoxy_port }}"
