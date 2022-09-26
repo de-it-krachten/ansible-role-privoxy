@@ -6,3 +6,6 @@ privoxy_packages:
 
 # Privoxy service name
 privoxy_service: privoxy
+
+# privoxy port
+privoxy_port: 8118

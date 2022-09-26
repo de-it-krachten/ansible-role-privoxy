@@ -10,3 +10,11 @@
     name: "{{ privoxy_service }}"
     state: started
     enabled: yes
+
+- name: Open firewall port
+  include_role:
+    name: firewall
+  vars:
+    firewall_ports:
+      - port: "{{ privoxy_port }}"
+        proto: 'tcp' 
