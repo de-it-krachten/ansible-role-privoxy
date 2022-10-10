@@ -1,6 +1,6 @@
 ---
 
 - name: Restart privoxy service
-  service:
+  ansible.builtin.service:
     name: "{{ privoxy_service }}"
     state: restarted
