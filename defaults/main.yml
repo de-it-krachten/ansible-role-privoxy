@@ -1,5 +1,17 @@
 ---
 
 # List of packages
-pivproxy_packages:
-  - pivproxy
+privoxy_packages:
+  - privoxy
+
+# Privoxy service name
+privoxy_service: privoxy
+
+# privoxy ip
+privoxy_ip: "{{ ansible_default_ipv4.address }}"
+
+# privoxy port
+privoxy_port: 8118
+
+privoxy_settings:
+  "listen-address": "{{ privoxy_ip }}:{{ privoxy_port }}"

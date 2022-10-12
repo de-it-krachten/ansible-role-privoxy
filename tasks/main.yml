@@ -1,12 +1,27 @@
 ---
 
-- name: Install pivproxy
-  package:
-    name: "{{ pivproxy_packages }}"
+- name: Install privoxy
+  ansible.builtin.package:
+    name: "{{ privoxy_packages }}"
     state: present
 
+- name: Configure privoxy
+  ansible.builtin.template:
+    src: templates/config.j2
+    dest: /etc/privoxy/config
+    mode: "0644"
+  notify: Restart privoxy service
+
 - name: Enable service
-  service:
-    name: "{{ pivproxy_service }}"
+  ansible.builtin.service:
+    name: "{{ privoxy_service }}"
     state: started
     enabled: yes
+
+- name: Open firewall port
+  ansible.builtin.include_role:
+    name: firewall
+  vars:
+    firewall_ports:
+      - openstack.cloud.port: "{{ privoxy_port }}"
+        proto: "tcp"

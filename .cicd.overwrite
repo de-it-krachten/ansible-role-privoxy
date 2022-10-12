@@ -1,0 +1,12 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-privoxy
+  role_short: privoxy
+  role_description: |
+    Manage privoxy 
+
+molecule:
+  requirements:
+    roles_extra: []
