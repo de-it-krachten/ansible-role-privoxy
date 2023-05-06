@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.0.0...v1.1.0) (2023-05-06)
+
+
+### Features
+
+* Move to namespaced role names ([86ab1e6](https://github.com/de-it-krachten/ansible-role-privoxy/commit/86ab1e68ce9a86602c57bcf3e42c962676d6d8a2))
+
 # 1.0.0 (2022-10-12)
 
 
