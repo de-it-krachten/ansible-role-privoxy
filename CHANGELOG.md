@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.2.0...v1.3.0) (2024-06-03)
+
+
+### Features
+
+* Add support for Ubuntu 24.04 LTS + Fedora 40 ([70f1a1a](https://github.com/de-it-krachten/ansible-role-privoxy/commit/70f1a1ad6cc583587a8bccccd09e487cd645ca5a))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.1.0...v1.2.0) (2023-09-19)
 
 
