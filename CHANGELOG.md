@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.3.0...v1.4.0) (2024-12-29)
+
+
+### Features
+
+* Update supported platforms & CI ([647a0df](https://github.com/de-it-krachten/ansible-role-privoxy/commit/647a0df2b47f7e9b8c3dbf7a726153c3d7e9c115))
+
 # [1.3.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.2.0...v1.3.0) (2024-06-03)
 
 
