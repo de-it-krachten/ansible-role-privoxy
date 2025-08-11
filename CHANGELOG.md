@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.4.0...v1.5.0) (2025-08-11)
+
+
+### Features
+
+* Add support for Debian 13 (Trixie) ([b376c0e](https://github.com/de-it-krachten/ansible-role-privoxy/commit/b376c0e6c9a3ae832bb09c76da27e5b779be0303))
+
 # [1.4.0](https://github.com/de-it-krachten/ansible-role-privoxy/compare/v1.3.0...v1.4.0) (2024-12-29)
 
 
