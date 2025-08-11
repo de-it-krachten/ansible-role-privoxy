@@ -9,6 +9,18 @@ generic:
 
 # Platforms
 platforms:
+  rhel10:
+    ci: false
+    supported: false
+  rockylinux10:
+    ci: false
+    supported: false
+  almalinux10:
+    ci: false
+    supported: false
+  oraclelinux10:
+    ci: false
+    supported: false
   opensuse15: 
     ci: false
     supported: false
