@@ -1,5 +1,4 @@
 ---
-
 galaxy_info:
   role_name: privoxy
   namespace: de_it_krachten
@@ -15,7 +14,6 @@ galaxy_info:
         - '9'
     - name: Debian
       versions:
-        - bullseye
         - bookworm
         - trixie
     - name: Ubuntu
@@ -23,6 +21,5 @@ galaxy_info:
         - jammy
     - name: Fedora
       versions:
-        - '42'
-        - '43'
+        - all
 dependencies: []

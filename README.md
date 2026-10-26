@@ -27,13 +27,13 @@ Supported platforms
 - OracleLinux 9
 - AlmaLinux 8
 - AlmaLinux 9
-- Debian 11 (Bullseye)
 - Debian 12 (Bookworm)
 - Debian 13 (Trixie)
 - Ubuntu 22.04 LTS
 - Ubuntu 24.04 LTS
-- Fedora 42
+- Ubuntu 26.04 LTS
 - Fedora 43
+- Fedora 44<sup>1</sup>
 
 Note:
 <sup>1</sup> : no automated testing is performed on these platforms
